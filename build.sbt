@@ -23,5 +23,5 @@ val COMMON_SETTINGS = Seq(
 lazy val root = Project(
   id = "tddbc",
   base = file("."),
-  settings = Defaults.defaultSettings ++ Seq(name := "tddbc") ++ ScctPlugin.mergeReportSettings
+  settings = Defaults.defaultSettings ++ COMMON_SETTINGS ++ Seq(name := "tddbc") ++ ScctPlugin.instrumentSettings
 )

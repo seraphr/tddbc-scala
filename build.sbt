@@ -21,7 +21,7 @@ val COMMON_SETTINGS = Seq(
 
 // root project
 lazy val root = Project(
-  id = "tddbc",
+  id = "todo",
   base = file("."),
-  settings = Defaults.defaultSettings ++ COMMON_SETTINGS ++ Seq(name := "tddbc") ++ ScctPlugin.instrumentSettings
+  settings = Defaults.defaultSettings ++ COMMON_SETTINGS ++ Seq(name := "todo") ++ ScctPlugin.instrumentSettings
 )
